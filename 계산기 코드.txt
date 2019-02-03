@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+	int num1, num2;
+	int Num;
+	int result;
+	while (1)
+	{
+		printf("1.µ¡¼À 2.»¬¼À 3.°ö¼À 4.³ª´°¼À ¹«¾ùÀ» ÇÏ½Ã°Ú½À´Ï±î?\n");
+		scanf("%d", &Num);
+		printf("µÎ°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.\n");
+		scanf("%d%d", &num1, &num2);
+		if (Num == 1)
+		{
+			result = num1 + num2;
+			printf("µ¡¼À °á°ú : %d\"+\"%d=%d\n",num1, num2, result);
+		}
+		else if (Num == 2)
+		{
+			result = num1 - num2;
+			printf("»¬¼À °á°ú :%d-%d=%d\n",num1, num2, result);
+		}
+		else if (Num == 3)
+		{
+			result = num1 * num2;
+			printf("°ö¼À °á°ú :%d\"X\"%d=%d\n",num1, num2, result);
+		}
+		else if (Num == 4)
+		{
+			result = num1 / num2;
+			printf("³ª´°¼À °á°ú : %d\"/\"%d=%d\n",num1, num2, result);
+		}
+		else
+		{
+			printf("¼ýÀÚ¸¦ Àß¸ø ÀÔ·ÂÇÏ¼Ë½À´Ï´Ù.´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä. \n");
+		}
+	}
+    return 0;
+}
