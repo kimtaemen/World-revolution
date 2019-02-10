@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main()
+{
+	int num1, num2;
+	int Num;
+	int result;
+
+	while (1)
+	{
+		printf("1.덧셈 2.뺄셈 3.곱셈 4.나눗셈 무엇을 하시겠습니까?\n");
+		scanf("%d", &Num);
+		printf("두개의 정수를 입력하세요.\n");
+		scanf("%d%d", &num1, &num2);
+		if (Num == 1)
+		{
+			result = num1 + num2;
+			printf("덧셈 결과 : %d+%d=%d\n",num1, num2, result);
+		}
+		else if (Num == 2)
+		{
+			result = num1 - num2;
+			printf("뺄셈 결과 :%d-%d=%d\n",num1, num2, result);
+		}
+		else if (Num == 3)
+		{
+			result = num1 * num2;
+			printf("곱셈 결과 :%dX%d=%d\n",num1, num2, result);
+		}
+		else if (Num == 4)
+		{
+
+			if(num1=0, num2=0)
+			{
+			   printf("정의되지 않은 결과입니다.");
+			}
+
+			else if(num2=0)
+			{
+			
+			  printf("0으로 나눌 수 없습니다.");
+			
+			}
+
+			else
+			{
+				
+			printf("몫 : %d 나머지 : %d ", num1 / num2, num1 % num2);
+			}
+		}
+		else
+		{
+			printf("숫자를 잘못 입력하셧습니다.다시 입력해주세요. \n");
+		}
+	}
+    return 0;
+}
+
