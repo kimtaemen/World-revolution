@@ -8,49 +8,49 @@ int main()
 
 	while (1)
 	{
-		printf("1.µ¡¼À 2.»¬¼À 3.°ö¼À 4.³ª´°¼À ¹«¾ùÀ» ÇÏ½Ã°Ú½À´Ï±î?\n");
+		printf("1.ë§ì…ˆ 2.ëº„ì…ˆ 3.ê³±ì…ˆ 4.ë‚˜ëˆ—ì…ˆ ë¬´ì—‡ì„ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?\n");
 		scanf("%d", &Num);
-		printf("µÎ°³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.\n");
+		printf("ë‘ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.\n");
 		scanf("%d%d", &num1, &num2);
 		if (Num == 1)
 		{
 			result = num1 + num2;
-			printf("µ¡¼À °á°ú : %d+%d=%d\n",num1, num2, result);
+			printf("ë§ì…ˆ ê²°ê³¼ : %d+%d=%d\n",num1, num2, result);
 		}
 		else if (Num == 2)
 		{
 			result = num1 - num2;
-			printf("»¬¼À °á°ú :%d-%d=%d\n",num1, num2, result);
+			printf("ëº„ì…ˆ ê²°ê³¼ :%d-%d=%d\n",num1, num2, result);
 		}
 		else if (Num == 3)
 		{
 			result = num1 * num2;
-			printf("°ö¼À °á°ú :%dX%d=%d\n",num1, num2, result);
+			printf("ê³±ì…ˆ ê²°ê³¼ :%dX%d=%d\n",num1, num2, result);
 		}
 		else if (Num == 4)
 		{
 
 			if(num1=0, num2=0)
 			{
-			   printf("Á¤ÀÇµÇÁö ¾ÊÀº °á°úÀÔ´Ï´Ù.");
+			   printf("ì •ì˜ë˜ì§€ ì•Šì€ ê²°ê³¼ì…ë‹ˆë‹¤.");
 			}
 
-			else if(num2=0)
+			else if(num1<0, num1>0, num2=0)
 			{
 			
-			  printf("0À¸·Î ³ª´­ ¼ö ¾ø½À´Ï´Ù.");
+			  printf("0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			
 			}
 
 			else
 			{
 				
-			printf("¸ò : %d ³ª¸ÓÁö : %d ", num1 / num2, num1 % num2);
+			printf("ëª« : %d ë‚˜ë¨¸ì§€ : %d ", num1 / num2, num1 % num2);
 			}
 		}
 		else
 		{
-			printf("¼ıÀÚ¸¦ Àß¸ø ÀÔ·ÂÇÏ¼Ë½À´Ï´Ù.´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä. \n");
+			printf("ìˆ«ìë¥¼ ì˜ëª» ì…ë ¥í•˜ì…§ìŠµë‹ˆë‹¤.ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”. \n");
 		}
 	}
     return 0;
